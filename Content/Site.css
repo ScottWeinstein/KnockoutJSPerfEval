@@ -1,0 +1,288 @@
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+.grid-sort-header
+{
+    cursor:pointer;
+    border-radius:3px;
+}
+.grid-sort-header:hover
+{
+    background-color: #E4E4E4;
+}
+.grid-sorted
+{
+    background-color: #D7D7D7;
+}
+.grid-sorted-asc
+{
+    
+}
+.grid-sorted-desc
+{
+    
+}
+
+span.grid-sort-indicator
+{
+    float:right;
+    height:12px;
+    width:12px;
+    display:none;
+    
+}
+.grid-sorted-asc span.grid-sort-indicator
+{
+    display: inline-block;
+    background-position: -2px -2px;
+    background-image: url('themes/base/images/ui-icons_888888_256x240.png');
+}
+.grid-sorted-desc span.grid-sort-indicator
+{
+    display: inline-block;
+    background-position: -66px -2px;
+    background-image: url('themes/base/images/ui-icons_888888_256x240.png');
+}
+
+.grid-cell
+{
+    padding-right:10px
+}
+
+.grid-header
+{
+    text-align:left
+}
+
+input[type="number"]
+{
+    width:20pt;
+}
+ 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#estimation-filter
+{
+    margin: 5px;
+}    
+#estimation-filter .choice
+{
+    display: inline-block;
+    margin: 5px 0;
+}
+#estimation-filter .selected 
+{
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+    color: Black;
+}
+#markdownPreview
+{
+    display:inline-block;
+    vertical-align:top;
+    width:100%;
+    height:150px;
+    border:dotted 1px gray;
+    background-color:#eee;
+
+}
+#markdownInput
+{
+    width:100%;
+    height:150px;
+}
+    
+.invalid-entry
+{
+    border: 1px solid #ff0000;       
+}
+
+#project-info
+{
+    padding:4px 0;
+}
+#project-info h2
+{
+    margin:10px  0;
+}
+#project-info a.show-hide-notes
+{
+    font-size:7pt;
+    cursor:pointer;
+}
+
+#control-panel
+{
+    margin-top:20px;
+}       
+
+#control-panel span.save-state
+{
+    margin:0 0 0 50px;
+    padding:5px 10px;
+    border-radius:4px;
+}
+#control-panel span.save-state-edited
+{
+    background-color: #F9BC06;
+}
+#control-panel span.save-state-saving
+{
+    background-color: #FFFF3E;
+}
+#control-panel span.save-state-saved
+{
+    background-color: #00CC00;
+}
+#control-panel span.save-state-failed
+{
+    background-color: #FF2B2B;
+}
+
+#bulk-preview-table tbody td input[type=text]
+{
+    width:75px;
+}
+
+#project-stories
+{
+    float:left;
+    margin:0 20px 0 0;
+    width: 850px;
+}
+#project-stories thead th
+{
+    padding:5px 2px;
+}
+#project-stories tbody tr:hover
+{
+   background-color: #DDDDDD;
+}
+#project-stories tr.selected-grid-row
+{
+    background-color: #C4C4FF;
+}
+
+#story-details
+{
+    float: left;
+    width: 400px;
+}
+#story-details > div.fixed
+{
+    position: fixed;
+    top: 20px;
+}
+#story-details h3
+{
+    margin:0 0 10px;
+}
+
+#storyDialog ul.story-edit-fields
+{
+    list-style-type:none;
+    padding: 0;
+    margin: 5px 0;
+}
+#storyDialog ul.story-edit-fields li
+{
+    display:inline-block;
+    width:400px;
+    padding:5px 20px 0 0;
+}
+#storyDialog ul.story-edit-fields li label
+{
+    display:inline-block;
+    width:150px;
+    font-weight:bold;
+}
+#storyDialog ul.story-edit-fields li input
+{
+    display:inline-block;
+    width:220px;
+}
+#storyDialog div.story-notes
+{
+    margin: 25px 0;
+}
+#storyDialog div.story-notes label
+{
+    font-weight:bold;
+}
