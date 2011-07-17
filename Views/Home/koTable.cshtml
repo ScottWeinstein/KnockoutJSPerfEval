@@ -1,0 +1,22 @@
+﻿<script id="Inner" type="text/html">
+<td data-bind="text: inner2"></td>
+</script>
+
+<script id="Outer" type="text/html">
+<tr>
+    <td data-bind="text: vInner"></td>
+</tr>
+<tr id="ddd" data-bind='template:{ name: "Inner", foreach: innerList }' >
+</tr>
+</script>
+
+
+
+<div data-bind="text: vOuter"></div>
+<table>
+    <tbody data-bind='template:{ name: "Outer", foreach: items }'>
+    </tbody>
+</table>
+
+
+<script src="/Scripts/ko.js" type="text/javascript"></script>

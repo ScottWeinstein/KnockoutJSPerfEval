@@ -22,5 +22,11 @@ namespace PerfEval.Controllers
             return View();
         }
 
+        public ActionResult koTable()
+        {
+            return View();
+        }
+
+
     }
 }
