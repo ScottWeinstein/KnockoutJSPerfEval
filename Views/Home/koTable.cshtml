@@ -1,4 +1,5 @@
-﻿<script id="Inner" type="text/html">
+﻿
+<script id="Inner" type="text/html">
 <td data-bind="text: inner2"></td>
 </script>
 
@@ -11,7 +12,7 @@
 </script>
 
 
-
+RenderTime <div data-bind="text: renderTime"></div>ms
 <div data-bind="text: vOuter"></div>
 <table>
     <tbody data-bind='template:{ name: "Outer", foreach: items }'>

@@ -16,11 +16,25 @@ for (var ii = 0; ii < 200; ii++) {
         });
 }
 
+function timeAction(action) {
+    var startTime = new Date();
+    action();
+    var endTime = new Date();
+
+    return endTime - startTime;
+}
+
 $(function () {
     var vm = {
         items: ko.observableArray(itemsa),
-        vOuter: ko.observable("vOuter")
+        vOuter: ko.observable("vOuter"),
+        renderTime: ko.observable('')
     };
-    ko.applyBindings(vm);
 
+    var action = function() {
+        ko.applyBindings(vm);
+    };
+
+    var time = timeAction(action);
+    vm.renderTime(time);
 });
