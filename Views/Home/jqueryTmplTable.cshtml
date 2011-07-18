@@ -1,0 +1,23 @@
+﻿
+<script id="Inner" type="text/html">
+<td>${inner2()}</td>
+</script>
+
+<script id="Outer" type="text/html">
+<tr>
+    <td>${vInner()}</td>
+</tr>
+<tr id="ddd" data-bind='template:{ name: "Inner", foreach: innerList }' >
+</tr>
+</script>
+
+
+RenderTime <div data-bind="text: renderTime"></div>ms
+<div data-bind="text: vOuter"></div>
+<table>
+    <tbody data-bind='template:{ name: "Outer", foreach: items }'>
+    </tbody>
+</table>
+
+
+<script src="/Scripts/ko.js" type="text/javascript"></script>

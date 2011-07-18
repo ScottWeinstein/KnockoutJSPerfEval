@@ -27,6 +27,9 @@ namespace PerfEval.Controllers
             return View();
         }
 
-
+        public ActionResult jqueryTmplTable()
+        {
+            return View();
+        }
     }
 }

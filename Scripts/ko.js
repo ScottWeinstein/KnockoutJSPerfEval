@@ -1,10 +1,10 @@
 ﻿/// <reference path="jquery-1.6.1-vsdoc.js" />
 
 var itemsa = [];
-for (var ii = 0; ii < 200; ii++) {
+for (var ii = 0; ii < 500; ii++) {
 
     innerList = [];
-    for (var il = 0; il < 30; il++) {
+    for (var il = 0; il < 10; il++) {
         innerList.push({
             inner2: ko.observable("vInner2")
         });
